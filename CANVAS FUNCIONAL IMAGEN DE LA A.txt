@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>canvas steve 2</title>
+
+    <style>
+
+* { padding: 0; margin: 0; }
+    	canvas { background: #ffffff; display: block; margin: 100 auto; }
+
+    </style>
+
+</head>
+
+<body>
+
+<canvas id="myCanvas" width="450" height="500"></canvas>
+
+<script>
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+	// JavaScript code goes here
+//AZULES primera fila
+
+ctx.beginPath();
+ctx.fillStyle = "#0000ff";
+ctx.rect(10, 10, 50, 50);
+ctx.rect(70, 10, 50, 50);
+ctx.rect(130, 10, 50, 50);
+ctx.rect(190, 70, 50, 50);
+ctx.rect(250, 10, 50, 50);
+ctx.rect(310, 10, 50, 50);
+ctx.rect(370, 10, 50, 50);
+
+//segunda fila
+
+ctx.rect(10, 70, 50, 50);
+ctx.rect(70, 70, 50, 50);
+
+
+ctx.rect(310, 70, 50, 50);
+ctx.rect(370, 70, 50, 50);
+
+
+//tercera fila
+
+ctx.rect(10, 130, 50, 50);
+
+ctx.rect(130, 130, 50, 50);
+ctx.rect(190, 130, 50, 50);
+ctx.rect(250, 130, 50, 50);
+
+ctx.rect(370, 130, 50, 50);
+
+//cuarta fila
+
+
+ctx.rect(70, 190, 50, 50);
+ctx.rect(130, 190, 50, 50);
+ctx.rect(190, 190, 50, 50);
+ctx.rect(250, 190, 50, 50);
+ctx.rect(310, 190, 50, 50);
+
+//quinta fila
+
+ctx.rect(70, 250, 50, 50);
+ctx.rect(130, 250, 50, 50);
+ctx.rect(190, 250, 50, 50);
+ctx.rect(250, 250, 50, 50);
+ctx.rect(310, 250, 50, 50);
+
+
+//sexta fila: todo va en rojo
+
+//septima fila
+
+
+ctx.rect(70, 370, 50, 50);
+ctx.rect(130, 370, 50, 50);
+ctx.rect(190, 370, 50, 50);
+ctx.rect(250, 370, 50, 50);
+ctx.rect(310, 370, 50, 50);
+
+
+//octava fila
+
+
+ctx.rect(10, 430, 50, 50);
+ctx.rect(70, 430, 50, 50);
+ctx.rect(130, 430, 50, 50);
+ctx.rect(190, 430, 50, 50);
+ctx.rect(250, 430, 50, 50);
+ctx.rect(310, 430, 50, 50);
+
+
+
+ctx.fill();
+ctx.closePath();
+
+//ROJOS
+
+
+ctx.beginPath();
+ctx.fillStyle = "#ff0000";
+ctx.rect(190, 10, 50, 50); //cuadro en posicion 4 de la primera fila
+ctx.rect(130, 70, 50, 50); //cuadro posicion 3 de la segunda fila
+ctx.rect(250, 70, 50, 50); //cuadro posicion 5 de la segunda fila
+ctx.rect(70, 130, 50, 50);  //cuadro en posicion 2 de la tercera fila
+ctx.rect(310, 130, 50, 50); //cuadro en posicion 6 de la tercera fila
+ctx.rect(10, 190, 50, 50);  //cuadro en posicion 1 fila 4
+ctx.rect(370, 190, 50, 50);  //cuadro en posicion 7 fila 4
+ctx.rect(10, 250, 50, 50);  //cuadro en posicion 1 fila 5
+ctx.rect(370, 250, 50, 50); // cuadro en pocision 7 fila 5
+ctx.rect(10, 310, 50, 50);  //cuadro en posicion 1 fila 6
+ctx.rect(70, 310, 50, 50);  //cuadro en posicion 2 fila 6
+ctx.rect(130, 310, 50, 50); //cuadro en posicion 3 fila 6
+ctx.rect(190, 310, 50, 50); //cuadro en posicion 4 fila 6
+ctx.rect(250, 310, 50, 50); //cuadro en posicion 5 fila 6
+ctx.rect(310, 310, 50, 50); //cuadro en posicion 6 fila 6
+ctx.rect(370, 310, 50, 50);  //cuadro en posicion 7 fila 6
+ctx.rect(10, 370, 50, 50);  //cuadro en posicion 1 fila 7
+ctx.rect(370, 370, 50, 50);  //cuadro en poscion 7 fila 7
+ctx.rect(10, 430, 50, 50);  //cuadro en posicion 1 fila 8
+ctx.rect(370, 430, 50, 50);  //cuadro es posicion 7 fila 8
+
+
+
+
+
+
+
+ctx.fill();
+ctx.closePath();
+
+
+</script>
+</body>
+</html>
